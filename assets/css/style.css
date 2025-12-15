@@ -4,6 +4,7 @@
     src: url('../font/Eddilu.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 body {
@@ -85,5 +86,6 @@ body {
         font-size: 23px;
     }
 }
+
 
 
