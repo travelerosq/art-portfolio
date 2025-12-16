@@ -98,14 +98,14 @@ body {
     Gallery 
 */
 .gallery {
-    column-width: clamp(160px, 22vw, 320px);
-    column-gap: 0.5rem;
-    padding: 0.5rem;
+    column-width: clamp(160px, 20vw, 320px);
+    column-gap: 0.4rem;
+    padding: 0.4rem;
 }
 
 .art-piece {
     break-inside: avoid;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.3rem;
     position: relative;
     width: 100%;
 }
@@ -140,6 +140,10 @@ body {
     Media Queries
 */
 @media (max-width: 768px) {
+    .gallery {
+        column-width: clamp(114px, 10vw, 320px);
+    }
+
     .nav-links a {
         font-size: 23px;
     }
