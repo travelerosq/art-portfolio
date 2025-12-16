@@ -1,0 +1,7 @@
+- mini drawing canvas
+- draw me something webpage 
+- character creator
+- color my art
+- hidden easter eggs
+- tiny web game
+- make a pattern generator
