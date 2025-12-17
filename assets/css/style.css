@@ -153,8 +153,8 @@ footer {
 .profile {
     display: flex;
     gap: 1rem;
-    padding: 1rem;
-    width: 90%;
+    padding: .5rem;
+    width: 99%;
     margin: 0 auto;
     flex-wrap: wrap;
     justify-content: space-between;
