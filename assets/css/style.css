@@ -154,7 +154,7 @@ footer {
     display: flex;
     gap: 1rem;
     padding: 1rem;
-    width: 100%;
+    width: 90%;
     margin: 0 auto;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -200,7 +200,7 @@ footer {
 
     .profile {
         flex-direction: column;
-        width: 93%;
+        width: 90%;
     }
     .profile .art-piece {
         width: 100%;
