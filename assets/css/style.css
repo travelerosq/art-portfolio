@@ -11,13 +11,24 @@
 /*
     Global Style
 */
+html {
+    background-color: #ffc6c6;
+}
+
 html, body {
     height: 100%;
+    overflow-x: hidden;
     margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
 }
 
 body {
-    background-color: #ffc6c6;
+    background: transparent;
     font-family: 'Eddilu';
     min-height: 100vh;
     display: flex;
@@ -27,6 +38,7 @@ body {
 main {
     flex: 1;
 }
+
 
 /* 
     NavBar Layout
@@ -108,14 +120,22 @@ main {
 
 /*
     Footer
-
-footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    z-index: 3;
-}
 */
+footer {
+    fill: #ffc6c6;
+    bottom: 0;
+    width: 99%;
+    z-index: 3;
+    padding-left: 1%;
+}
+
+/*
+    Hero
+*/
+.hero {
+    padding-left: 1%;
+}
+
 
 /* 
     Gallery 
