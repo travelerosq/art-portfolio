@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EddiLu — Art Portfolio</title>
+    <base href="/art-portfolio/">
+    <link rel="icon" href="assets/images/favicon.png" type="image/png">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <div id="navbar-placeholder"></div>
+        <script src="assets/js/fetchNavbar.js" defer></script>
+    </header>
+    <main>
+        <div class="drawing">
+            <div class="frame" id="frame">
+                <img src="assets/images/drawing-border.svg" class="canvas-border" alt="">
+                <canvas id="color"></canvas>
+            </div>
+        </div>
+        <button id="download">Download</button>
+        <script src="assets/js/draw.js" defer></script>
+    </main>
+    <footer>
+        <p>2025 EddiLu</p>
+    </footer>
+</body>
+
+</html>

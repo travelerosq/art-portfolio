@@ -218,6 +218,46 @@ footer {
     max-width: 50vw;
 } 
 
+/*
+    Drawing
+*/
+canvas {
+    touch-action: none;
+}
+
+.drawing {
+    display: flex;
+    padding: 3%;
+    justify-content: center;
+}
+
+.frame {
+    position: relative;
+    width: 60vw;
+    max-width: 1000px;
+}
+
+.canvas-border {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    z-index: 1;
+    pointer-events: none;
+}
+
+#color {
+    position: absolute;
+    top: 11%;
+    left: 11%;
+    width: 78%;
+    height: 78%;
+
+    z-index: 2;
+    display: block;
+}
+
 /* 
     Media Queries
 */
