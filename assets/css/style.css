@@ -39,6 +39,12 @@ main {
     flex: 1;
 }
 
+a {
+    color: white;
+}
+a:hover {
+    color: #188038;
+}
 
 /* 
     NavBar Layout
@@ -136,6 +142,15 @@ footer {
     padding-left: 1%;
 }
 
+.hero h1 {
+    font-size: 3vw;
+    margin-bottom: 0;
+}
+
+.hero p {
+    font-size: 2vw;
+    margin: .5vw;
+}
 
 /* 
     Gallery 
@@ -273,12 +288,17 @@ canvas {
     flex-direction: column;
     gap: 10px;
     align-items: flex-start;
-    margin-top: 70px;
+    margin-top: 6%;
 }
 
 #tools label {
     display: flex;
+    font-size: 2vw;
     gap: 8px;
+}
+
+#tools a {
+    font-size: 2vw;
 }
 
 /* 
