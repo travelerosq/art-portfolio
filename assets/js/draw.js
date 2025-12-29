@@ -15,7 +15,6 @@ if (imgFile) {
 
         ctx.drawImage(img, 0, 0);
         history.push(ctx.getImageData(0, 0, canvas.width, canvas.height));
-        historyStep = 0;
         ctx.beginPath();
 
         const frame = document.getElementById("frame");
@@ -32,12 +31,16 @@ let lastX = 0;
 let lastY = 0;
 let strokePoints = [];
 
+const undoButton = document.getElementById("undo");
+const redoButton = document.getElementById("redo");
 const colorPicker = document.getElementById("colorPicker");
 const penSize = document.getElementById("penSize");
 const penSizeValue = document.getElementById("penSizeValue");
 const opacity = document.getElementById("opacity");
 const opacityValue = document.getElementById("opacityValue");
 
+undoButton.addEventListener("click", undo);
+redoButton.addEventListener("click", redo)
 opacity.addEventListener("input", (e) => {
     currentOpacity = e.target.value / 100;
     opacityValue.textContent = `${e.target.value}%`;
@@ -138,8 +141,6 @@ function draw(e) {
 }
 
 function undo() {
-    console.log(historyStep);
-    console.log(history);
     if (historyStep > 0) {
         historyStep--;
         ctx.putImageData(history[historyStep], 0, 0);
